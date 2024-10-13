@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Buy Now - Product Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .product-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product-header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .product-header p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .product-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product-image img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .buy-now-button {
+            appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 auto;
+  margin-left: 35%;
+  min-height: 40px;
+  min-width: 0px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 250px;
+  will-change: transform;
+}
+
+.buy-now-button:disabled {
+  pointer-events: none;
+}
+
+        .buy-now-button:hover {
+            color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+        }
+       .buy-now-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="product-header">
+            <h1>Buy Now: <b>Premium</b> CC's</h1>
+            <p>Get your hands on our premium product!</p>
+        </div>
+
+        <div class="product-image">
+            <img src="/static/mainposter.webp" alt="Product Image">
+        </div>
+
+        <div class="product-details">
+            <p>This after effects pack includes many <b>premium</b> cc for after effects</p>
+            <div class="product-image">
+                <img src="/static/aura.png" alt="Product Image">
+            </div>
+            <div class="product-price">$5.00</div>
+        </div>
+
+        <div class="buy-now">
+            <a href="/checkout" class="buy-now-button">Proceed to Checkout</a>
+        </div>
+    </div>
+
+</body>
+</html>

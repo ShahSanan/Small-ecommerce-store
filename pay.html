@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .payment-summary {
+            margin: 20px 0;
+        }
+
+        .payment-summary p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .payment-method {
+            margin: 20px 0;
+        }
+
+        .payment-method label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .payment-method select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .confirm-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .confirm-button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        .message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Payment Confirmation</h1>
+
+        <div class="payment-summary">
+            <p><strong>Order Summary:</strong></p>
+            <p>Product: Premium Pack</p>
+            <p>Amount: $5.00</p>
+        </div>
+
+        <div class="payment-method">
+            <label for="payment">Select Payment Method:</label>
+            <select id="payment">
+                <option value="">--Choose a method--</option>
+                <option value="paypal">Paytm</option>
+            </select>
+        </div>
+
+        <button class="confirm-button" id="confirm-button">Confirm Payment</button>
+
+        <div class="message" id="confirmation-message">Payment Successful!</div>
+    </div>
+
+    <script>
+        document.getElementById('confirm-button').addEventListener('click', function() {
+            const paymentMethod = document.getElementById('payment').value;
+            const messageElement = document.getElementById('confirmation-message');
+
+            if (paymentMethod) {
+                // Simulate payment processing
+                setTimeout(() => {
+                    messageElement.style.display = 'block'; // Show success message
+                }, 1000); // Simulate a delay of 1 second for payment processing
+            } else {
+                alert('Please select a payment method.');
+            }
+        });
+    </script>
+
+</body>
+</html>
